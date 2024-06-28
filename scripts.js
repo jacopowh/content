@@ -66,8 +66,10 @@ setupCarousel('finanza-comportamentale-carousel');
 setupCollapsibleMenu();
 
 // Aggiungiamo un listener per il cambio di persona
+ /*
 document.querySelector('.personas-select').addEventListener('change', function() {
     const selectedPersona = this.value;
     console.log('Persona selezionata:', selectedPersona);
     // Qui puoi aggiungere la logica per cambiare il contenuto in base alla persona selezionata
 });
+*/

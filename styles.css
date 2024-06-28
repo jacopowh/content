@@ -107,7 +107,7 @@ main {
     cursor: pointer;
     margin-right: 1rem;
 }
-
+/*
 .search-bar {
     margin-bottom: 2rem;
     display: flex;
@@ -131,6 +131,7 @@ main {
     background-color: #fff;
     color: var(--text-color);
 }
+*/
 
 .section-title {
     font-size: 1.75rem;
@@ -194,6 +195,7 @@ main {
     border-radius: 4px;
     margin-top: 1rem;
 }
+
 
 .secondary-content {
     display: flex;
