@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portale Professionale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <button class="menu-toggle">☰ Menu</button>
+        <div class="logo">PortalePro</div>
+    </header>
+
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#conversation-starter">Conversation Starter</a></li>
+                    <li><a href="#view-casa">View della casa</a></li>
+                    <li><a href="#finanza-comportamentale">Finanza comportamentale</a></li>
+                    <li><a href="#glossario">Glossario</a></li>
+                    <li><a href="#rassegna-news">Rassegna news</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <div class="search-bar">
+                <input type="text" placeholder="Cerca...">
+                <select class="personas-select">
+                    <option value="">Seleziona Persona</option>
+                    <option value="persona1">Persona 1</option>
+                    <option value="persona2">Persona 2</option>
+                    <option value="persona3">Persona 3</option>
+                </select>
+            </div>
+
+            <section id="home">
+                <h2 class="section-title">Home</h2>
+                
+                <div class="carousel-row">
+                    <div class="carousel" id="conversation-starter-carousel">
+                        <h3>Conversation Starter</h3>
+                        <div class="carousel-item active">
+                            <img src="https://via.placeholder.com/600x400" alt="Strategia d'investimento">
+                            <h4>Strategia d'investimento</h4>
+                            <p>Una guida per discutere le strategie d'investimento con i clienti...</p>
+                            <a href="#" class="download-btn">Scarica PDF</a>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Pianificazione pensionistica</h4>
+                            <p>Consigli per aiutare i clienti a pianificare il loro futuro finanziario...</p>
+                            <a href="#" class="download-btn">Scarica PDF</a>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="prevBtn">Precedente</button>
+                            <button class="nextBtn">Successivo</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel" id="view-casa-carousel">
+                        <h3>View della casa</h3>
+                        <div class="carousel-item active">
+                            <img src="https://via.placeholder.com/600x400" alt="Pianificazione pensionistica">
+                            <h4>Analisi di mercato - Giugno 2024</h4>
+                            <p>Una panoramica dettagliata delle tendenze di mercato attuali...</p>
+                            <a href="#" class="download-btn">Scarica PDF</a>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Previsioni economiche - Q3 2024</h4>
+                            <p>Le nostre previsioni per il terzo trimestre del 2024...</p>
+                            <a href="#" class="download-btn">Scarica PDF</a>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="prevBtn">Precedente</button>
+                            <button class="nextBtn">Successivo</button>
+                        </div>
+                    </div>
+
+                    <div class="carousel" id="finanza-comportamentale-carousel">
+                        <h3>Finanza comportamentale</h3>
+                        <div class="carousel-item active">
+                            <img src="https://via.placeholder.com/600x400" alt="Analisi di mercato">
+                            <h4>Bias di conferma</h4>
+                            <p>Come il bias di conferma influenza le decisioni finanziarie dei clienti...</p>
+                            <a href="#" class="download-btn">Leggi di più</a>
+                        </div>
+                        <div class="carousel-item">
+                            <h4>Avversione alla perdita</h4>
+                            <p>Strategie per aiutare i clienti a superare l'avversione alla perdita...</p>
+                            <a href="#" class="download-btn">Leggi di più</a>
+                        </div>
+                        <div class="carousel-nav">
+                            <button class="prevBtn">Precedente</button>
+                            <button class="nextBtn">Successivo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="secondary-content">
+                    <div class="secondary-item">
+                        <h3>Glossario</h3>
+                        <p>Una guida completa ai termini finanziari più importanti. Utile per professionisti e clienti.</p>
+                        <a href="glossario.html" class="download-btn">Apri Glossario</a>
+                    </div>
+                    <div class="secondary-item">
+                        <h3>Rassegna News</h3>
+                        <p>Le ultime notizie e aggiornamenti dal mondo finanziario, curate dai nostri esperti.</p>
+                        <a href="rassegna-news.html" class="download-btn">Apri Rassegna</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PortalePro. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
