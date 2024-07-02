@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossario - Portale Professionale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .glossary-content {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 2rem;
+        }
+        .glossary-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .glossary-item {
+            margin-bottom: 1.5rem;
+        }
+        .glossary-term {
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        .glossary-definition {
+            margin-left: 1rem;
+        }
+        .letter-divider {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        #glossary-search {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            border: 1px solid var(--light-gray);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <button class="menu-toggle">☰ Menu</button>
+        <div class="logo"></div>
+    </header>
+
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="conversation-starters.html">Conversation Starter</a></li>
+                    <li><a href="view-casa.html">View della casa</a></li>
+                    <li><a href="finanza-comportamentale.html">Finanza comportamentale</a></li>
+                    <li><a href="glossario.html">Glossario</a></li>
+                    <li><a href="rassegna-news.html">Rassegna news</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="glossario">
+                <h2 class="section-title">Glossario Finanziario</h2>
+                <p>Una raccolta completa di termini finanziari e le loro definizioni.</p>
+                
+                <div class="glossary-content">
+                    <input type="text" id="glossary-search" placeholder="Cerca un termine...">
+                    
+                    <div class="letter-divider">A</div>
+                    <ul class="glossary-list">
+                        <li class="glossary-item">
+                            <div class="glossary-term">Azione</div>
+                            <div class="glossary-definition">Titolo che rappresenta una quota di proprietà di una società.</div>
+                        </li>
+                        <li class="glossary-item">
+                            <div class="glossary-term">Asset Allocation</div>
+                            <div class="glossary-definition">Distribuzione degli investimenti tra diverse classi di attività finanziarie.</div>
+                        </li>
+                    </ul>
+
+                    <div class="letter-divider">B</div>
+                    <ul class="glossary-list">
+                        <li class="glossary-item">
+                            <div class="glossary-term">Bond</div>
+                            <div class="glossary-definition">Titolo di debito emesso da società o governi per raccogliere capitali.</div>
+                        </li>
+                        <li class="glossary-item">
+                            <div class="glossary-term">Beta</div>
+                            <div class="glossary-definition">Misura della volatilità di un titolo rispetto al mercato nel suo complesso.</div>
+                        </li>
+                    </ul>
+
+                    <div class="letter-divider">C</div>
+                    <ul class="glossary-list">
+                        <li class="glossary-item">
+                            <div class="glossary-term">Capitalizzazione di mercato</div>
+                            <div class="glossary-definition">Valore totale delle azioni in circolazione di una società.</div>
+                        </li>
+                        <li class="glossary-item">
+                            <div class="glossary-term">Commodity</div>
+                            <div class="glossary-definition">Bene fungibile scambiato sui mercati, come oro, petrolio o grano.</div>
+                        </li>
+                    </ul>
+
+                    <!-- Aggiungere più termini e lettere qui -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PortalePro. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('glossary-search');
+            const glossaryItems = document.querySelectorAll('.glossary-item');
+            const letterDividers = document.querySelectorAll('.letter-divider');
+
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+
+                glossaryItems.forEach(item => {
+                    const term = item.querySelector('.glossary-term').textContent.toLowerCase();
+                    const definition = item.querySelector('.glossary-definition').textContent.toLowerCase();
+                    
+                    if (term.includes(searchTerm) || definition.includes(searchTerm)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+
+                letterDividers.forEach(divider => {
+                    const nextSibling = divider.nextElementSibling;
+                    const visibleItems = nextSibling.querySelectorAll('.glossary-item[style="display: block;"]');
+                    
+                    if (visibleItems.length > 0) {
+                        divider.style.display = 'block';
+                    } else {
+                        divider.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{POST_TITLE} - Portale Professionale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .post-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .post-content h1 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .post-content .meta {
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+        }
+        .post-content .content {
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <button class="menu-toggle">☰ Menu</button>
+        <div class="logo"></div>
+    </header>
+
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="conversation-starters.html">Conversation Starter</a></li>
+                    <li><a href="view-casa.html">View della casa</a></li>
+                    <li><a href="finanza-comportamentale.html">Finanza comportamentale</a></li>
+                    <li><a href="#glossario">Glossario</a></li>
+                    <li><a href="#rassegna-news">Rassegna news</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <article class="post-content">
+                <h1>{POST_TITLE}</h1>
+                <div class="meta">
+                    <span class="date">{POST_DATE}</span> | 
+                    <span class="author">{POST_AUTHOR}</span>
+                </div>
+                <div class="content">
+                    {POST_CONTENT}
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PortalePro. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

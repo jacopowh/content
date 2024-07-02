@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanza Comportamentale - Portale Professionale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .post-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .post-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .post-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .post-card p {
+            margin-bottom: 1rem;
+        }
+        .post-card .read-more {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <button class="menu-toggle">☰ Menu</button>
+        <div class="logo"></div>
+    </header>
+
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="conversation-starters.html">Conversation Starter</a></li>
+                    <li><a href="view-casa.html">View della casa</a></li>
+                    <li><a href="finanza-comportamentale.html">Finanza comportamentale</a></li>
+                    <li><a href="glossario.html">Glossario</a></li>
+                    <li><a href="rassegna-news.html">Rassegna news</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="finanza-comportamentale">
+                <h2 class="section-title">Finanza Comportamentale</h2>
+                <p>Esplora i principi della finanza comportamentale e come influenzano le decisioni finanziarie dei clienti.</p>
+                
+                <div class="post-list">
+                    <div class="post-card">
+                        <h3>Bias di Conferma nelle Decisioni Finanziarie</h3>
+                        <p>Esplora come il bias di conferma può influenzare le scelte d'investimento e come aiutare i clienti a superarlo.</p>
+                        <a href="bias-conferma.html" class="read-more">Leggi di più</a>
+                    </div>
+                    <div class="post-card">
+                        <h3>Avversione alla Perdita: Strategie per i Consulenti</h3>
+                        <p>Scopri tecniche efficaci per aiutare i clienti a gestire l'avversione alla perdita e prendere decisioni finanziarie più equilibrate.</p>
+                        <a href="#" class="read-more">Leggi di più</a>
+                    </div>
+                    <div class="post-card">
+                        <h3>L'Effetto Ancoraggio nel Pricing dei Prodotti Finanziari</h3>
+                        <p>Analizza come l'effetto ancoraggio influenza la percezione del valore dei prodotti finanziari e come utilizzarlo eticamente nella consulenza.</p>
+                        <a href="#" class="read-more">Leggi di più</a>
+                    </div>
+                    <div class="post-card">
+                        <h3>Overconfidence: Riconoscerla e Gestirla nei Clienti</h3>
+                        <p>Impara a identificare i segnali di overconfidence nei clienti e strategie per guidarli verso decisioni più realistiche.</p>
+                        <a href="#" class="read-more">Leggi di più</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PortalePro. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
