@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View della casa - Portale Professionale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .view-casa-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        .view-casa-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .view-casa-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        .view-casa-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .view-casa-card p {
+            margin-bottom: 1rem;
+        }
+        .chart-placeholder {
+            width: 100%;
+            height: 200px;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <button class="menu-toggle">☰ Menu</button>
+        <div class="logo"></div>
+    </header>
+
+    <div class="content-wrapper">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="conversation-starters.html">Conversation Starter</a></li>
+                    <li><a href="view-casa.html">View della casa</a></li>
+                    <li><a href="#finanza-comportamentale">Finanza comportamentale</a></li>
+                    <li><a href="#glossario">Glossario</a></li>
+                    <li><a href="#rassegna-news">Rassegna news</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="view-casa">
+                <h2 class="section-title">View della casa</h2>
+                <p>Analisi di mercato e previsioni economiche aggiornate per guidare le tue decisioni di investimento.</p>
+                
+                <div class="view-casa-content">
+                    <div class="view-casa-card">
+                        <h3>View di maggio</h3>
+                        <div class="chart-placeholder">Grafico: Andamento PIL</div>
+                        <p>Il PIL globale ha mostrato una crescita del 3.5% nell'ultimo trimestre, superando le aspettative degli analisti. Questo trend positivo è supportato dalla ripresa del settore manifatturiero e dall'aumento dei consumi privati.</p>
+                        <a href="https://www.canva.com/design/DAGH0oC1cIs/MVLOq2GciM-4wtokRdnNbg/edit?utm_content=DAGH0oC1cIs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="download-btn">Scarica report completo</a>
+                    </div>
+                    
+                    <div class="view-casa-card">
+                        <h3>View di aprile</h3>
+                        <div class="chart-placeholder">Grafico: Indici di borsa principali</div>
+                        <p>I mercati azionari hanno registrato una performance positiva, con l'indice S&P 500 che ha raggiunto nuovi massimi storici. Il settore tecnologico continua a guidare la crescita, mentre i titoli value mostrano segnali di recupero.</p>
+                        <a href="https://www.canva.com/design/DAGH0oC1cIs/MVLOq2GciM-4wtokRdnNbg/edit?utm_content=DAGH0oC1cIs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="download-btn">Scarica report completo</a>
+                    </div>
+                    
+                    <div class="view-casa-card">
+                        <h3>View di aprile</h3>
+                        <div class="chart-placeholder">Grafico: Curva dei rendimenti</div>
+                        <p>Le banche centrali mantengono una posizione accomodante, con tassi di interesse che dovrebbero rimanere bassi nel breve-medio termine. Tuttavia, crescono le aspettative di un graduale rialzo dei tassi nel lungo periodo.</p>
+                        <a href="https://www.canva.com/design/DAGH0oC1cIs/MVLOq2GciM-4wtokRdnNbg/edit?utm_content=DAGH0oC1cIs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" class="download-btn">Scarica report completo</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PortalePro. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
